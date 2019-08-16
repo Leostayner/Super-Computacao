@@ -15,15 +15,15 @@
 #define MAX_SIZE 4
 
 int main(){
-    //std::ofstream myfile;
-    //myfile.open("data.json");
-    //Json::Value obj;
-    
-    Log  lg;
-    Sqrt sq;
-    Sum  sm;
-    Pow3 pw3;
-    Pow3Mult pw3m;
+    std::ofstream myfile;
+    myfile.open("data.json");
+    Json::Value obj;
+ 
+    Log  lg("Log");
+    Sqrt sq("Sqrt");
+    Sum  sm("Sum");
+    Pow3 pw3("Pow3");
+    Pow3Mult pw3m("Pow3Mult");
 
     Experimento *e1 = &lg;
     Experimento *e2 = &sq;
@@ -36,15 +36,31 @@ int main(){
     for(int i = 0; i < MAX_SIZE; i++){
 
         for (auto e : le){ 
-            e->n = MAX_SIZE;
+            double min = pow(10,10); 
+            double max = 0;
 
+            e->n = MAX_SIZE;
             e->gera_entrada(); 
-            e->run();
-            e->duration();
+            
+            for(int i = 0; i < 10; i++){
+                e->run();
+                
+                if(min > e->duration())
+                    min = e->duration();
+                
+                if(max < e->duration())
+                    max = e->duration();
+            }
+            
+            obj[e->name][i] = (max - min) / 2;
+            
+            if(e->duration() < 0.1)
+                std::cout << e->name << "_" << i << std::endl;    
+
             e->~Experimento();
         }
     }
 
-    //myfile << obj;
-    //myfile.close();
+    myfile << obj;
+    myfile.close();
 }

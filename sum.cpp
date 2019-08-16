@@ -1,5 +1,8 @@
 #include "sum.hpp"
 #include <iostream>
+#include <string>
+
+Sum::Sum(std::string _name){name = _name;}
 
 void Sum::experiment_code(){
     double tmp = 0;

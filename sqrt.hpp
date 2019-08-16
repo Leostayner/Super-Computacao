@@ -5,7 +5,8 @@
 
 class Sqrt: public Experimento{
     public:
-        void experiment_code();    
+        void experiment_code();
+        Sqrt(std::string);    
 };
 
 #endif

@@ -5,7 +5,9 @@
 
 class Pow3: public Experimento{
     public:
-        void experiment_code();    
+        void experiment_code(); 
+        Pow3(std::string);    
+   
 };
 
 #endif

@@ -26,3 +26,13 @@ void Experimento::run(){
     time = end;
 }
 
+bool Experimento::operator<(const Experimento& e){    
+    if(this->time < e.time && this->n == e.n)
+        return true;
+    
+    return false;
+}
+
+bool Experimento::operator<(double d){    
+    return  this->time < d;
+}

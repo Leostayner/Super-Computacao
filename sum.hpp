@@ -5,7 +5,9 @@
 
 class Sum: public Experimento{
     public:
-        void experiment_code();    
+        void experiment_code(); 
+        Sum(std::string);    
+   
 };
 
 #endif

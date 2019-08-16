@@ -5,7 +5,8 @@
 
 class Log: public Experimento{
     public:
-        void experiment_code();    
+        void experiment_code();
+        Log(std::string);    
 };
 
 #endif
