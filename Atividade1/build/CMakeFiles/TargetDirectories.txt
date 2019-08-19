@@ -1,0 +1,4 @@
+/home/leonardo/Semestre8/SuperComputacao/Super-Computacao/Atividade1/build/CMakeFiles/rebuild_cache.dir
+/home/leonardo/Semestre8/SuperComputacao/Super-Computacao/Atividade1/build/CMakeFiles/edit_cache.dir
+/home/leonardo/Semestre8/SuperComputacao/Super-Computacao/Atividade1/build/CMakeFiles/vector_operations.dir
+/home/leonardo/Semestre8/SuperComputacao/Super-Computacao/Atividade1/build/CMakeFiles/vector_O3.dir

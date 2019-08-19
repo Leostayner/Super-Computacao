@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/vector_operations.dir/experimento.cpp.o CMakeFiles/vector_operations.dir/log.cpp.o CMakeFiles/vector_operations.dir/main.cpp.o CMakeFiles/vector_operations.dir/pow3.cpp.o CMakeFiles/vector_operations.dir/pow3mult.cpp.o CMakeFiles/vector_operations.dir/sqrt.cpp.o CMakeFiles/vector_operations.dir/sum.cpp.o  -o vector_operations -ljsoncpp 

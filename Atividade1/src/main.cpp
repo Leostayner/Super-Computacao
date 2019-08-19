@@ -13,15 +13,20 @@
 #include "pow3.hpp"
 #include "pow3mult.hpp"
 
-#define MAX_SIZE 4
+#define MAX_SIZE 1000
 
-int main(){
+int main(int argc, const char *argv[]){
+    //Output Data File
     std::ofstream myfile;
-    myfile.open("data.json");
+    std::string fileName  = argv[0] + 2;
+    std::string extension = ".json";
+    
+    myfile.open(fileName + extension);
     Json::Value obj;
     
     std::vector<std::pair<double, double>> times;
 
+    //Instance of the experiments
     Log  lg("Log");
     Sqrt sq("Sqrt");
     Sum  sm("Sum");
@@ -35,22 +40,25 @@ int main(){
     Experimento *e5 = &pw3m;
     
     Experimento *le[5] = {e1, e2, e3, e4, e5};
+    
+    //Run experiments
+    for (auto e : le)
+        for(int i = 0; i < MAX_SIZE; i++){
 
-    for(int i = 0; i < MAX_SIZE; i++){
-
-        for (auto e : le){ 
             e->n = MAX_SIZE;
             e->gera_entrada(); 
             
             times.push_back(e->run());
             
             if(e->duration() < 0.1)
-                std::cout << e->name << "_" << i << std::endl;    
+                std::cout << e->name << "_" << i << std::endl;
         }
+    
+    //Save data to file
+    for (auto i = times.begin(); i != times.end(); ++i){
+        obj["Mean"].append(std::get<0>(*i));
+        obj["STD"].append(std::get<1>(*i));
     }
-
-    for (auto i = times.begin(); i != times.end(); ++i)
-        std::cout << "Mean: " << std::get<0>(*i) << 'Standard deviation' << std::get<1>(*i) << std::endl;
 
     myfile << obj;
     myfile.close();

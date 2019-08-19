@@ -9,7 +9,8 @@
 #define RDMN 5.0
 #define RDST 0.5
 
-///Verificar Random
+using namespace std::chrono; 
+
 std::vector<double> Experimento::gera_entrada(){
     std::mt19937 generator;
     std::normal_distribution<double> normal(RDMN, RDST);
@@ -24,7 +25,6 @@ double Experimento::duration(){
     return time;
 }
 
-//Verificar time do chrono
 std::pair<double, double> Experimento::run(){
     std::array<double, 10> values;
 
@@ -32,9 +32,9 @@ std::pair<double, double> Experimento::run(){
     double stdm;
     
     for(int i = 0; i < 10; i++){
-        auto start = std::chrono::high_resolution_clock::now();
+        auto start = high_resolution_clock::now();
         experiment_code();
-        auto end   = std::chrono::duration_cast<std::chrono::duration<double>>(std::chrono::high_resolution_clock::now() - start).count();    
+        auto end   = duration_cast<milliseconds>(high_resolution_clock::now() - start).count();    
         
         values[i]  = end;
         mean       += end;
