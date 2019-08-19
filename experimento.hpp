@@ -2,23 +2,24 @@
 #define EXEMPLO_H
 
 #include <string>
+#include <vector>
+#include <utility>
 
 class Experimento{
 
     public:
         
         int n;
-        double *vec;
         double time;
+        std::vector<double> vec;
         std::string name;
 
-        double* gera_entrada();
+        std::vector<double> gera_entrada();
         double  duration();
-        ~Experimento();
-
+        
+        std::pair<double, double> run();
         virtual void experiment_code(){};
-        void run();
-
+        
         bool operator<(const Experimento&);
         bool operator<(double);
 };

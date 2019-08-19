@@ -4,6 +4,7 @@
 #include <fstream>
 #include <jsoncpp/json/json.h>
 #include <string>
+#include <vector>
 
 #include "experimento.hpp"
 #include "log.hpp"
@@ -18,7 +19,9 @@ int main(){
     std::ofstream myfile;
     myfile.open("data.json");
     Json::Value obj;
- 
+    
+    std::vector<std::pair<double, double>> times;
+
     Log  lg("Log");
     Sqrt sq("Sqrt");
     Sum  sm("Sum");
@@ -36,30 +39,18 @@ int main(){
     for(int i = 0; i < MAX_SIZE; i++){
 
         for (auto e : le){ 
-            double min = pow(10,10); 
-            double max = 0;
-
             e->n = MAX_SIZE;
             e->gera_entrada(); 
             
-            for(int i = 0; i < 10; i++){
-                e->run();
-                
-                if(min > e->duration())
-                    min = e->duration();
-                
-                if(max < e->duration())
-                    max = e->duration();
-            }
-            
-            obj[e->name][i] = (max - min) / 2;
+            times.push_back(e->run());
             
             if(e->duration() < 0.1)
                 std::cout << e->name << "_" << i << std::endl;    
-
-            e->~Experimento();
         }
     }
+
+    for (auto i = times.begin(); i != times.end(); ++i)
+        std::cout << "Mean: " << std::get<0>(*i) << 'Standard deviation' << std::get<1>(*i) << std::endl;
 
     myfile << obj;
     myfile.close();
