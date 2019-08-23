@@ -34,8 +34,7 @@ std::pair<double, double> Experimento::run(){
     for(int i = 0; i < 10; i++){
         auto start = high_resolution_clock::now();
         experiment_code();
-        auto end   = duration_cast<milliseconds>(high_resolution_clock::now() - start).count();    
-        
+        auto end = duration_cast<std::chrono::duration<double>>(high_resolution_clock::now() - start).count();    
         values[i]  = end;
         mean       += end;
     }

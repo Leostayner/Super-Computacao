@@ -13,18 +13,19 @@
 #include "pow3.hpp"
 #include "pow3mult.hpp"
 
-#define MAX_SIZE 1000
+#define MAX_SIZE 10000000
 
 int main(int argc, const char *argv[]){
     //Output Data File
     std::ofstream myfile;
-    std::string fileName  = argv[0] + 2;
+    std::string fileName  = argv[0] + 9;
     std::string extension = ".json";
     
     myfile.open(fileName + extension);
     Json::Value obj;
     
-    std::vector<std::pair<double, double>> times;
+    //Times Table
+    std::map<std::string, std::vector<std::pair<double, double>>> table;
 
     //Instance of the experiments
     Log  lg("Log");
@@ -42,23 +43,24 @@ int main(int argc, const char *argv[]){
     Experimento *le[5] = {e1, e2, e3, e4, e5};
     
     //Run experiments
-    for (auto e : le)
-        for(int i = 0; i < MAX_SIZE; i++){
-
-            e->n = MAX_SIZE;
+    for (auto e : le){
+        for(int i = 1000; i < MAX_SIZE; i *= 10){
+            e->n = i;
             e->gera_entrada(); 
             
-            times.push_back(e->run());
+            table[e->name].push_back(e->run());
             
             if(e->duration() < 0.1)
                 std::cout << e->name << "_" << i << std::endl;
         }
-    
-    //Save data to file
-    for (auto i = times.begin(); i != times.end(); ++i){
-        obj["Mean"].append(std::get<0>(*i));
-        obj["STD"].append(std::get<1>(*i));
     }
+    
+    //Save Table in File
+    for (const auto& sm_pair : table)
+        for (auto i = sm_pair.second.begin(); i != sm_pair.second.end(); ++i){
+            obj[sm_pair.first]["Mean"].append(std::get<0>(*i));
+            obj[sm_pair.first]["STD"].append(std::get<1>(*i));
+        }
 
     myfile << obj;
     myfile.close();

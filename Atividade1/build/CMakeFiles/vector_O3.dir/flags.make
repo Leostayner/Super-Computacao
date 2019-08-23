@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_FLAGS =   -std=c++11
 
-CXX_DEFINES = -DO0
+CXX_DEFINES = -DO3
 
 CXX_INCLUDES = 
 

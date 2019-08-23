@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/vector_O2N.dir/main.cpp.o CMakeFiles/vector_O2N.dir/experimento.cpp.o CMakeFiles/vector_O2N.dir/log.cpp.o CMakeFiles/vector_O2N.dir/pow3.cpp.o CMakeFiles/vector_O2N.dir/pow3mult.cpp.o CMakeFiles/vector_O2N.dir/sqrt.cpp.o CMakeFiles/vector_O2N.dir/sum.cpp.o  -o vector_O2N -ljsoncpp 

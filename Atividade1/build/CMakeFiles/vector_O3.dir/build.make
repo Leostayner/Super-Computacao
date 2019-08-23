@@ -57,9 +57,33 @@ include CMakeFiles/vector_O3.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/vector_O3.dir/flags.make
 
+CMakeFiles/vector_O3.dir/main.cpp.o: CMakeFiles/vector_O3.dir/flags.make
+CMakeFiles/vector_O3.dir/main.cpp.o: /home/leonardo/Semestre8/SuperComputacao/Super-Computacao/Atividade1/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/leonardo/Semestre8/SuperComputacao/Super-Computacao/Atividade1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/vector_O3.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vector_O3.dir/main.cpp.o -c /home/leonardo/Semestre8/SuperComputacao/Super-Computacao/Atividade1/src/main.cpp
+
+CMakeFiles/vector_O3.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/vector_O3.dir/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/leonardo/Semestre8/SuperComputacao/Super-Computacao/Atividade1/src/main.cpp > CMakeFiles/vector_O3.dir/main.cpp.i
+
+CMakeFiles/vector_O3.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vector_O3.dir/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/leonardo/Semestre8/SuperComputacao/Super-Computacao/Atividade1/src/main.cpp -o CMakeFiles/vector_O3.dir/main.cpp.s
+
+CMakeFiles/vector_O3.dir/main.cpp.o.requires:
+
+.PHONY : CMakeFiles/vector_O3.dir/main.cpp.o.requires
+
+CMakeFiles/vector_O3.dir/main.cpp.o.provides: CMakeFiles/vector_O3.dir/main.cpp.o.requires
+	$(MAKE) -f CMakeFiles/vector_O3.dir/build.make CMakeFiles/vector_O3.dir/main.cpp.o.provides.build
+.PHONY : CMakeFiles/vector_O3.dir/main.cpp.o.provides
+
+CMakeFiles/vector_O3.dir/main.cpp.o.provides.build: CMakeFiles/vector_O3.dir/main.cpp.o
+
+
 CMakeFiles/vector_O3.dir/experimento.cpp.o: CMakeFiles/vector_O3.dir/flags.make
 CMakeFiles/vector_O3.dir/experimento.cpp.o: /home/leonardo/Semestre8/SuperComputacao/Super-Computacao/Atividade1/src/experimento.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/leonardo/Semestre8/SuperComputacao/Super-Computacao/Atividade1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/vector_O3.dir/experimento.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/leonardo/Semestre8/SuperComputacao/Super-Computacao/Atividade1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/vector_O3.dir/experimento.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vector_O3.dir/experimento.cpp.o -c /home/leonardo/Semestre8/SuperComputacao/Super-Computacao/Atividade1/src/experimento.cpp
 
 CMakeFiles/vector_O3.dir/experimento.cpp.i: cmake_force
@@ -83,7 +107,7 @@ CMakeFiles/vector_O3.dir/experimento.cpp.o.provides.build: CMakeFiles/vector_O3.
 
 CMakeFiles/vector_O3.dir/log.cpp.o: CMakeFiles/vector_O3.dir/flags.make
 CMakeFiles/vector_O3.dir/log.cpp.o: /home/leonardo/Semestre8/SuperComputacao/Super-Computacao/Atividade1/src/log.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/leonardo/Semestre8/SuperComputacao/Super-Computacao/Atividade1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/vector_O3.dir/log.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/leonardo/Semestre8/SuperComputacao/Super-Computacao/Atividade1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/vector_O3.dir/log.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vector_O3.dir/log.cpp.o -c /home/leonardo/Semestre8/SuperComputacao/Super-Computacao/Atividade1/src/log.cpp
 
 CMakeFiles/vector_O3.dir/log.cpp.i: cmake_force
@@ -103,30 +127,6 @@ CMakeFiles/vector_O3.dir/log.cpp.o.provides: CMakeFiles/vector_O3.dir/log.cpp.o.
 .PHONY : CMakeFiles/vector_O3.dir/log.cpp.o.provides
 
 CMakeFiles/vector_O3.dir/log.cpp.o.provides.build: CMakeFiles/vector_O3.dir/log.cpp.o
-
-
-CMakeFiles/vector_O3.dir/main.cpp.o: CMakeFiles/vector_O3.dir/flags.make
-CMakeFiles/vector_O3.dir/main.cpp.o: /home/leonardo/Semestre8/SuperComputacao/Super-Computacao/Atividade1/src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/leonardo/Semestre8/SuperComputacao/Super-Computacao/Atividade1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/vector_O3.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vector_O3.dir/main.cpp.o -c /home/leonardo/Semestre8/SuperComputacao/Super-Computacao/Atividade1/src/main.cpp
-
-CMakeFiles/vector_O3.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/vector_O3.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/leonardo/Semestre8/SuperComputacao/Super-Computacao/Atividade1/src/main.cpp > CMakeFiles/vector_O3.dir/main.cpp.i
-
-CMakeFiles/vector_O3.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vector_O3.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/leonardo/Semestre8/SuperComputacao/Super-Computacao/Atividade1/src/main.cpp -o CMakeFiles/vector_O3.dir/main.cpp.s
-
-CMakeFiles/vector_O3.dir/main.cpp.o.requires:
-
-.PHONY : CMakeFiles/vector_O3.dir/main.cpp.o.requires
-
-CMakeFiles/vector_O3.dir/main.cpp.o.provides: CMakeFiles/vector_O3.dir/main.cpp.o.requires
-	$(MAKE) -f CMakeFiles/vector_O3.dir/build.make CMakeFiles/vector_O3.dir/main.cpp.o.provides.build
-.PHONY : CMakeFiles/vector_O3.dir/main.cpp.o.provides
-
-CMakeFiles/vector_O3.dir/main.cpp.o.provides.build: CMakeFiles/vector_O3.dir/main.cpp.o
 
 
 CMakeFiles/vector_O3.dir/pow3.cpp.o: CMakeFiles/vector_O3.dir/flags.make
@@ -227,9 +227,9 @@ CMakeFiles/vector_O3.dir/sum.cpp.o.provides.build: CMakeFiles/vector_O3.dir/sum.
 
 # Object files for target vector_O3
 vector_O3_OBJECTS = \
+"CMakeFiles/vector_O3.dir/main.cpp.o" \
 "CMakeFiles/vector_O3.dir/experimento.cpp.o" \
 "CMakeFiles/vector_O3.dir/log.cpp.o" \
-"CMakeFiles/vector_O3.dir/main.cpp.o" \
 "CMakeFiles/vector_O3.dir/pow3.cpp.o" \
 "CMakeFiles/vector_O3.dir/pow3mult.cpp.o" \
 "CMakeFiles/vector_O3.dir/sqrt.cpp.o" \
@@ -238,9 +238,9 @@ vector_O3_OBJECTS = \
 # External object files for target vector_O3
 vector_O3_EXTERNAL_OBJECTS =
 
+vector_O3: CMakeFiles/vector_O3.dir/main.cpp.o
 vector_O3: CMakeFiles/vector_O3.dir/experimento.cpp.o
 vector_O3: CMakeFiles/vector_O3.dir/log.cpp.o
-vector_O3: CMakeFiles/vector_O3.dir/main.cpp.o
 vector_O3: CMakeFiles/vector_O3.dir/pow3.cpp.o
 vector_O3: CMakeFiles/vector_O3.dir/pow3mult.cpp.o
 vector_O3: CMakeFiles/vector_O3.dir/sqrt.cpp.o
@@ -255,9 +255,9 @@ CMakeFiles/vector_O3.dir/build: vector_O3
 
 .PHONY : CMakeFiles/vector_O3.dir/build
 
+CMakeFiles/vector_O3.dir/requires: CMakeFiles/vector_O3.dir/main.cpp.o.requires
 CMakeFiles/vector_O3.dir/requires: CMakeFiles/vector_O3.dir/experimento.cpp.o.requires
 CMakeFiles/vector_O3.dir/requires: CMakeFiles/vector_O3.dir/log.cpp.o.requires
-CMakeFiles/vector_O3.dir/requires: CMakeFiles/vector_O3.dir/main.cpp.o.requires
 CMakeFiles/vector_O3.dir/requires: CMakeFiles/vector_O3.dir/pow3.cpp.o.requires
 CMakeFiles/vector_O3.dir/requires: CMakeFiles/vector_O3.dir/pow3mult.cpp.o.requires
 CMakeFiles/vector_O3.dir/requires: CMakeFiles/vector_O3.dir/sqrt.cpp.o.requires

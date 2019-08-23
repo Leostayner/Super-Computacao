@@ -60,76 +60,187 @@ CMAKE_SOURCE_DIR = /home/leonardo/Semestre8/SuperComputacao/Super-Computacao/Ati
 CMAKE_BINARY_DIR = /home/leonardo/Semestre8/SuperComputacao/Super-Computacao/Atividade1/build
 
 #=============================================================================
-# Target rules for target CMakeFiles/vector_operations.dir
+# Target rules for target CMakeFiles/vector_O1N.dir
 
 # All Build rule for target.
-CMakeFiles/vector_operations.dir/all:
-	$(MAKE) -f CMakeFiles/vector_operations.dir/build.make CMakeFiles/vector_operations.dir/depend
-	$(MAKE) -f CMakeFiles/vector_operations.dir/build.make CMakeFiles/vector_operations.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leonardo/Semestre8/SuperComputacao/Super-Computacao/Atividade1/build/CMakeFiles --progress-num=9,10,11,12,13,14,15,16 "Built target vector_operations"
-.PHONY : CMakeFiles/vector_operations.dir/all
+CMakeFiles/vector_O1N.dir/all:
+	$(MAKE) -f CMakeFiles/vector_O1N.dir/build.make CMakeFiles/vector_O1N.dir/depend
+	$(MAKE) -f CMakeFiles/vector_O1N.dir/build.make CMakeFiles/vector_O1N.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leonardo/Semestre8/SuperComputacao/Super-Computacao/Atividade1/build/CMakeFiles --progress-num=9,10,11,12,13,14,15,16 "Built target vector_O1N"
+.PHONY : CMakeFiles/vector_O1N.dir/all
 
 # Include target in all.
-all: CMakeFiles/vector_operations.dir/all
+all: CMakeFiles/vector_O1N.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/vector_operations.dir/rule: cmake_check_build_system
+CMakeFiles/vector_O1N.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leonardo/Semestre8/SuperComputacao/Super-Computacao/Atividade1/build/CMakeFiles 8
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/vector_operations.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/vector_O1N.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leonardo/Semestre8/SuperComputacao/Super-Computacao/Atividade1/build/CMakeFiles 0
-.PHONY : CMakeFiles/vector_operations.dir/rule
+.PHONY : CMakeFiles/vector_O1N.dir/rule
 
 # Convenience name for target.
-vector_operations: CMakeFiles/vector_operations.dir/rule
+vector_O1N: CMakeFiles/vector_O1N.dir/rule
 
-.PHONY : vector_operations
-
-# clean rule for target.
-CMakeFiles/vector_operations.dir/clean:
-	$(MAKE) -f CMakeFiles/vector_operations.dir/build.make CMakeFiles/vector_operations.dir/clean
-.PHONY : CMakeFiles/vector_operations.dir/clean
+.PHONY : vector_O1N
 
 # clean rule for target.
-clean: CMakeFiles/vector_operations.dir/clean
+CMakeFiles/vector_O1N.dir/clean:
+	$(MAKE) -f CMakeFiles/vector_O1N.dir/build.make CMakeFiles/vector_O1N.dir/clean
+.PHONY : CMakeFiles/vector_O1N.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/vector_O1N.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/vector_O3.dir
+# Target rules for target CMakeFiles/vector_O0N.dir
 
 # All Build rule for target.
-CMakeFiles/vector_O3.dir/all:
-	$(MAKE) -f CMakeFiles/vector_O3.dir/build.make CMakeFiles/vector_O3.dir/depend
-	$(MAKE) -f CMakeFiles/vector_O3.dir/build.make CMakeFiles/vector_O3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leonardo/Semestre8/SuperComputacao/Super-Computacao/Atividade1/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target vector_O3"
-.PHONY : CMakeFiles/vector_O3.dir/all
+CMakeFiles/vector_O0N.dir/all:
+	$(MAKE) -f CMakeFiles/vector_O0N.dir/build.make CMakeFiles/vector_O0N.dir/depend
+	$(MAKE) -f CMakeFiles/vector_O0N.dir/build.make CMakeFiles/vector_O0N.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leonardo/Semestre8/SuperComputacao/Super-Computacao/Atividade1/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target vector_O0N"
+.PHONY : CMakeFiles/vector_O0N.dir/all
 
 # Include target in all.
-all: CMakeFiles/vector_O3.dir/all
+all: CMakeFiles/vector_O0N.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/vector_O3.dir/rule: cmake_check_build_system
+CMakeFiles/vector_O0N.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leonardo/Semestre8/SuperComputacao/Super-Computacao/Atividade1/build/CMakeFiles 8
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/vector_O3.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/vector_O0N.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leonardo/Semestre8/SuperComputacao/Super-Computacao/Atividade1/build/CMakeFiles 0
-.PHONY : CMakeFiles/vector_O3.dir/rule
+.PHONY : CMakeFiles/vector_O0N.dir/rule
 
 # Convenience name for target.
-vector_O3: CMakeFiles/vector_O3.dir/rule
+vector_O0N: CMakeFiles/vector_O0N.dir/rule
 
-.PHONY : vector_O3
-
-# clean rule for target.
-CMakeFiles/vector_O3.dir/clean:
-	$(MAKE) -f CMakeFiles/vector_O3.dir/build.make CMakeFiles/vector_O3.dir/clean
-.PHONY : CMakeFiles/vector_O3.dir/clean
+.PHONY : vector_O0N
 
 # clean rule for target.
-clean: CMakeFiles/vector_O3.dir/clean
+CMakeFiles/vector_O0N.dir/clean:
+	$(MAKE) -f CMakeFiles/vector_O0N.dir/build.make CMakeFiles/vector_O0N.dir/clean
+.PHONY : CMakeFiles/vector_O0N.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/vector_O0N.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/vector_O2N.dir
+
+# All Build rule for target.
+CMakeFiles/vector_O2N.dir/all:
+	$(MAKE) -f CMakeFiles/vector_O2N.dir/build.make CMakeFiles/vector_O2N.dir/depend
+	$(MAKE) -f CMakeFiles/vector_O2N.dir/build.make CMakeFiles/vector_O2N.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leonardo/Semestre8/SuperComputacao/Super-Computacao/Atividade1/build/CMakeFiles --progress-num=17,18,19,20,21,22,23,24 "Built target vector_O2N"
+.PHONY : CMakeFiles/vector_O2N.dir/all
+
+# Include target in all.
+all: CMakeFiles/vector_O2N.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/vector_O2N.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leonardo/Semestre8/SuperComputacao/Super-Computacao/Atividade1/build/CMakeFiles 8
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/vector_O2N.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leonardo/Semestre8/SuperComputacao/Super-Computacao/Atividade1/build/CMakeFiles 0
+.PHONY : CMakeFiles/vector_O2N.dir/rule
+
+# Convenience name for target.
+vector_O2N: CMakeFiles/vector_O2N.dir/rule
+
+.PHONY : vector_O2N
+
+# clean rule for target.
+CMakeFiles/vector_O2N.dir/clean:
+	$(MAKE) -f CMakeFiles/vector_O2N.dir/build.make CMakeFiles/vector_O2N.dir/clean
+.PHONY : CMakeFiles/vector_O2N.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/vector_O2N.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/vector_O3N.dir
+
+# All Build rule for target.
+CMakeFiles/vector_O3N.dir/all:
+	$(MAKE) -f CMakeFiles/vector_O3N.dir/build.make CMakeFiles/vector_O3N.dir/depend
+	$(MAKE) -f CMakeFiles/vector_O3N.dir/build.make CMakeFiles/vector_O3N.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leonardo/Semestre8/SuperComputacao/Super-Computacao/Atividade1/build/CMakeFiles --progress-num=33,34,35,36,37,38,39,40 "Built target vector_O3N"
+.PHONY : CMakeFiles/vector_O3N.dir/all
+
+# Include target in all.
+all: CMakeFiles/vector_O3N.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/vector_O3N.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leonardo/Semestre8/SuperComputacao/Super-Computacao/Atividade1/build/CMakeFiles 8
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/vector_O3N.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leonardo/Semestre8/SuperComputacao/Super-Computacao/Atividade1/build/CMakeFiles 0
+.PHONY : CMakeFiles/vector_O3N.dir/rule
+
+# Convenience name for target.
+vector_O3N: CMakeFiles/vector_O3N.dir/rule
+
+.PHONY : vector_O3N
+
+# clean rule for target.
+CMakeFiles/vector_O3N.dir/clean:
+	$(MAKE) -f CMakeFiles/vector_O3N.dir/build.make CMakeFiles/vector_O3N.dir/clean
+.PHONY : CMakeFiles/vector_O3N.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/vector_O3N.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/vector_O3F.dir
+
+# All Build rule for target.
+CMakeFiles/vector_O3F.dir/all:
+	$(MAKE) -f CMakeFiles/vector_O3F.dir/build.make CMakeFiles/vector_O3F.dir/depend
+	$(MAKE) -f CMakeFiles/vector_O3F.dir/build.make CMakeFiles/vector_O3F.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leonardo/Semestre8/SuperComputacao/Super-Computacao/Atividade1/build/CMakeFiles --progress-num=25,26,27,28,29,30,31,32 "Built target vector_O3F"
+.PHONY : CMakeFiles/vector_O3F.dir/all
+
+# Include target in all.
+all: CMakeFiles/vector_O3F.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/vector_O3F.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leonardo/Semestre8/SuperComputacao/Super-Computacao/Atividade1/build/CMakeFiles 8
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/vector_O3F.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leonardo/Semestre8/SuperComputacao/Super-Computacao/Atividade1/build/CMakeFiles 0
+.PHONY : CMakeFiles/vector_O3F.dir/rule
+
+# Convenience name for target.
+vector_O3F: CMakeFiles/vector_O3F.dir/rule
+
+.PHONY : vector_O3F
+
+# clean rule for target.
+CMakeFiles/vector_O3F.dir/clean:
+	$(MAKE) -f CMakeFiles/vector_O3F.dir/build.make CMakeFiles/vector_O3F.dir/clean
+.PHONY : CMakeFiles/vector_O3F.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/vector_O3F.dir/clean
 
 .PHONY : clean
 
