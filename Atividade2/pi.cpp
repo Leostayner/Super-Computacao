@@ -167,6 +167,22 @@ double pi_omp_parallel_critical_errado(long steps){
 }
 
 
+double pi_omp_parallel_for(long steps){
+    double step = 1.0 / (double)NUM_STEPS;
+    double pi;
+    
+    #pragma omp parallel
+    #pragma omp for reduction(+:pi)
+    for (int i = 0; i < NUM_STEPS; ++i) {
+        double x = (i + 0.5) * step;    
+        pi += 4.0 / (1.0 + x * x);
+    }
+
+    pi *= step;
+    return pi;
+}
+
+
 std::pair<double, double> run(int selectFunction){
     double pi;
     auto start_time = high_resolution_clock::now();
@@ -189,9 +205,13 @@ std::pair<double, double> run(int selectFunction){
     else if(selectFunction == 6)
         pi = pi_omp_parallel_critical(NUM_STEPS);
         
-    else
+    else if(selectFunction == 7)
         pi_omp_parallel_critical_errado(NUM_STEPS);
 
+    else
+        pi_omp_parallel_for(NUM_STEPS);
+    
+    
 
     auto runtime = duration_cast<duration<double>>(high_resolution_clock::now() - start_time).count();
 
@@ -215,4 +235,5 @@ int main() {
     result = run(5);
     result = run(6);
     result = run(7);
+    result = run(8);
 }
